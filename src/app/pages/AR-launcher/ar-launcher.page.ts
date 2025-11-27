@@ -15,7 +15,13 @@ export class ARLauncherPage implements OnInit {
     private readonly router: Router
   ) { }
 
-  ngOnInit() {
+  async ngOnInit() {
+    // const perm = await Permissions.request({ name: 'camera' });
+
+    // if (perm.state !== 'granted') {
+    //   alert('Necesitas habilitar la cámara para usar la realidad aumentada');
+    //   return;
+    // }
   }
 
   public async close() {
