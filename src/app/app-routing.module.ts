@@ -7,6 +7,10 @@ const routes: Routes = [
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   },
   {
+    path: 'ar-launcher',
+    loadChildren: () => import('./pages/AR-launcher/ar-launcher.module').then( m => m.ARLauncherPageModule)
+  },
+  {
     path: '**',
     redirectTo: 'home',
     pathMatch: 'full'

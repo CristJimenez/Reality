@@ -34,4 +34,24 @@
 
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
-@import "@ionic/angular/css/palettes/dark.system.css";
+// @import "@ionic/angular/css/palettes/dark.system.css";
+/* src/global.scss */
+
+/* Estilos para hacer el modal transparente y a pantalla completa */
+.my-ar-modal {
+  /* Hace que el fondo del modal sea transparente */
+  --backdrop-opacity: 0 !important; 
+  --background: transparent !important;
+}
+
+/* Es posible que necesites asegurar que el contenido dentro del modal también es transparente */
+.my-ar-modal ion-content {
+    --background: transparent !important;
+}
+
+/* A veces es necesario asegurar que el ion-header no se superponga o también sea transparente */
+.my-ar-modal ion-header {
+    --background: transparent !important;
+    /* Considera si quieres que el encabezado sea visible o no. 
+       Si lo quieres invisible, establece también un color de texto claro o quítalo. */
+}
